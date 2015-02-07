@@ -258,15 +258,6 @@ class console {
     public function cursorDown($lines=1)            { echo "\033[{$lines}B"; return $this; }
     public function cursorRight($columns=1)            { echo "\033[{$columns}C"; return $this; }
     public function cursorLeft($columns=1)            { echo "\033[{$columns}D"; return $this; }
-    
-    // Text colors
-	public function setStyle($style='default')        { $this->text .= "\033[".$this->style[$style]."m"; return $this; }
-    public function setColor($color='default')        { $this->text .= "\033[".$this->color[$color]; return $this; }
-    public function setBgColor($color='default')    {  }
-
-    // Other
-    public function clear()                            { echo "\033c"; return $this; }
-    public function console($num=1)                    { echo "\033[12;{$num}]"; return $this; }
 }
 */
 
