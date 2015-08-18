@@ -1,0 +1,21 @@
+{
+	"name": "pulyavin/console",
+	"type": "library",
+	"description": "PHP library for linux console",
+	"keywords": ["linux", "php", "console"],
+	"homepage": "https://github.com/pulyavin/PHP-Linux-Console",
+	"authors": [
+		{
+			"name": "Artemiy Pulyavin",
+			"email": "artemiy@pulyavin.ru"
+		}
+	],
+	"require": {
+		"php": ">=5.3",
+	},
+	"autoload": {
+		"psr-4": {
+			"pulyavin\\console\\": ""
+		}
+	}
+}
