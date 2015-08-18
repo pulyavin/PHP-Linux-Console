@@ -1,5 +1,6 @@
-<?php
-class console {
+<?php namespace pulyavin\console;
+
+class Console {
     # опции, разобранные функцией getopt()
     private $options = [];
     # массив аргументов, хранящийся в $_SERVER
@@ -231,34 +232,3 @@ class console {
         $this->text = null;
     }
 }
-
-/*
-
-    
-    // Input
-    public function readNumeric()
-    {
-        $stdin = fopen('php://stdin', 'r');
-        $line = trim(fgets($stdin));
-        fscanf($stdin, "%d\n", $number);
-          return $number;
-    }
-    public function readString()
-    {
-        $stdin = fopen('php://stdin', 'r');
-        $line = trim(fgets($stdin));
-          fscanf($stdin, "%s\n", $string);
-          return $string;
-    }
-    
-
-    // Cursor position
-    public function toPos( $row = 1, $column = 1 )    { echo "\033[{$row};{$column}H"; return $this; }
-    public function cursorUp($lines=1)                { echo "\033[{$lines}A"; return $this; }
-    public function cursorDown($lines=1)            { echo "\033[{$lines}B"; return $this; }
-    public function cursorRight($columns=1)            { echo "\033[{$columns}C"; return $this; }
-    public function cursorLeft($columns=1)            { echo "\033[{$columns}D"; return $this; }
-}
-*/
-
-?> 
